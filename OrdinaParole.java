@@ -12,14 +12,16 @@ il programma stampa il contenuto dell'ArrayList.
 */
 class OrdinaParole{
   public static void main (String args[]) throws IOException{
+
+    ArrayList <String> parole = new ArrayList <String> ();
+
     BufferedReader br = new BufferedReader(new FileReader("parole.txt"));
     StringBuilder sb = new StringBuilder();
     String line = br.readLine();
-    
+
     while (!line.equals("quit")) {
-      System.out.println(line);
+      parole.add(line);
       line = br.readLine();
     }
-
   }
 }
