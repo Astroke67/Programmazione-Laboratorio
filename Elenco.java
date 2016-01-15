@@ -22,12 +22,10 @@ public class Elenco{
 			scelta=in.next().charAt(0);
 			
 			if(scelta=='i' || scelta=='I' ){
-				
-				numeri[i] = in.nextLine();//per risolvere problema ciclo for (non permetteva di inserire nessun dato durante il primo ciclo)
 
 				for(i=0;i<grandezza;i++){
 					System.out.print("\nInserisci il " + i + " numero di telefono: ");
-					numeri[i] = in.nextLine();
+					numeri[i] = in.next();
 				
 				}
 
