@@ -15,43 +15,43 @@ class Dado{
 
     Random casuale = new Random();
 
-    int uno=0,due=0,tre=0,quattro=0,cinque=0,sei=0;
+    int faccia[] =new int[6];
     int num;
     int dado;
 
     System.out.print("Quanti lanci vuoi fare?");
     num = in.nextInt();
 
-
     for (int i=0;i<num;i++) {
         dado=casuale.nextInt(6)+1;
+
         switch(dado){
           case 1:
-            uno++;
+            faccia[0] ++;
             break;
           case 2:
-            due++;
+            faccia[1] ++;
             break;
           case 3:
-            tre++;
+            faccia[2] ++;
             break;
           case 4:
-            quattro++;
+            faccia[3] ++;
             break;
           case 5:
-            cinque++;
+            faccia[4] ++;
             break;
           case 6:
-            sei++;
+            faccia[5] ++;
             break;
         }
 
     }
-    System.out.println("Faccia uno: " + uno + " volte");
-    System.out.println("Faccia due: " + due + " volte");
-    System.out.println("Faccia tre: " + tre + " volte");
-    System.out.println("Faccia quattro: " + quattro + " volte");
-    System.out.println("Faccia cinque: " + cinque + " volte");
-    System.out.println("Faccia sei: " + sei + " volte");
+    System.out.println("Faccia uno: " + faccia[0] + " volte - " + (faccia[0]*100/num)  + " % ");
+    System.out.println("Faccia due: " + faccia[1] + " volte - " + (faccia[1]*100/num)  + " % ");
+    System.out.println("Faccia tre: " + faccia[2] + " volte - " + (faccia[2]*100/num)  + " % ");
+    System.out.println("Faccia quattro: " + faccia[3] + " volte - " + (faccia[3]*100/num)  + " % ");
+    System.out.println("Faccia cinque: " + faccia[4] + " volte - " + (faccia[4]*100/num)  + " % ");
+    System.out.println("Faccia sei: " + faccia[5] + " volte - " + (faccia[5]*100/num)  + " % ");
   }
 }
