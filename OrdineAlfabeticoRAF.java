@@ -2,7 +2,7 @@ package pFile;
 
 import java.io.*;
 import java.util.ArrayList;
-public class FileAlfabetico {
+public class OrdineAlfabeticoRAF {
 
 	public static void main(String[] args)throws IOException,FileNotFoundException {
 		
