@@ -35,13 +35,12 @@ e la stampa.*/
   }
 /*estrae dal file nomeFile stringhe separate da '-' e le stampa.*/
   static void estraiParole(File inFile,Scanner in){
+
     while(in.hasNext()){
-        riga=in.nextLine();
-        if(riga.equals("-")){
-          System.out.println(" ");
-        }
-        System.out.println(riga);
-     }
+      riga=in.next();
+      riga=riga.replaceAll("-", " ");
+      System.out.println(riga);
+    }
   }
 
   public static void main(String[] args) throws IOException {
