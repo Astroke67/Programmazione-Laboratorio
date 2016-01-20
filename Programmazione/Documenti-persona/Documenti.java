@@ -15,16 +15,6 @@ public class Documenti{
   }
 
   //METODI
-  public void setNome(){
-    this.nome=nome;
-  }
-
-  public void setCognome(){
-
-  }
-  public void setCodFisc(){
-
-  }
 
   public void maschio(){
     this.sesso="maschio";
