@@ -11,18 +11,13 @@ class Bancomat{
     this.id=cod;
   }
 
-
   public String stampa(){
     String stringa;
     stringa="\nNome: "+ nome +"\nCognome: "+cognome+"\nCodice cliente: "+id;
     return stringa;
   }
 
-  public void getOperazione(char o){
-    this.operazione=o;
-  }
-
-  Banca banca=new Banca(operazione);
+  Banca banca=new Banca();
 
   public int visualizzaSaldo(){
     saldo=banca.visualizzaSaldoBanca();
@@ -37,6 +32,4 @@ class Bancomat{
     this.soldiRitirati=valore;
     banca.ritiraDenaroBanca(soldiRitirati);
   }
-
-
 }
