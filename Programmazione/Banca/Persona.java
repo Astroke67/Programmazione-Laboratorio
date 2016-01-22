@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-class Persona{
+class Personat{
   public static void main(String[] args){
     String nome,cognome,id;
     char scelta=' ';
@@ -30,7 +30,6 @@ class Persona{
       switch(scelta){
         case '1':
           //Visualizzare saldo.
-          b.getOperazione(scelta);
           System.out.println("\n\nSaldo attuale: " + b.visualizzaSaldo()+" euro");
           break;
         case '2':
@@ -38,7 +37,6 @@ class Persona{
           System.out.println("Quanto vuoi depositare?");
           soldi=in.nextInt();
           b.depositaDenaro(soldi);
-          b.getOperazione(scelta);
           System.out.println("\n\nSaldo attuale: " + b.visualizzaSaldo()+" euro");
 
           break;
@@ -47,7 +45,6 @@ class Persona{
           System.out.println("Quanto vuoi ritirare?");
           soldi=in.nextInt();
           b.ritiraDenaro(soldi);
-          b.getOperazione(scelta);
           System.out.println("\n\nSaldo attuale: " + b.visualizzaSaldo()+" euro");
           break;
         case '4':
