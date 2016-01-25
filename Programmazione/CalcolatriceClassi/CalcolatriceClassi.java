@@ -1,6 +1,9 @@
 import java.io.*;
 import java.util.*;
 
+/*Il programma funziona come una semplice calcolatrice ma le operazioni non vengono fatte nel main ma tramite 
+le classi richiamate dal file Calcoli.java*/
+
 class CalcolatriceClassi{
 
 	public static void main (String [] args) {
