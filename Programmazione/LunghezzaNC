@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+/*   Scrivere un programma che chiede nome e cognome e stampa 
+     sia il nome che il cognome tutti in maiuscolo seguiti dalla 
+     loro lunghezza, poi nome + cognome seguito dalla somma delle
+     lunghezze.*/
+
+public class LunghezzaNC{
+    public static void main(String[] args){
+        Scanner in=new Scanner(System.in);
+        String nome, cognome;
+        int lunghezza;
+        int Lnome;
+        int Lcognome;
+        int nomcog;
+        
+        System.out.println("nome?");
+        nome=in.nextLine();
+        System.out.println("cognome?");
+        cognome=in.nextLine();
+        nome=nome.toUpperCase();
+        cognome=cognome.toUpperCase();
+        Lnome=nome.length();
+        Lcognome=cognome.length();
+        System.out.println(nome +" "+ Lnome);
+        System.out.println(cognome +" "+ Lcognome);
+        nomcog=Lnome+Lcognome;
+        System.out.println(nome+"+"+cognome+" "+nomcog);
+        
+    }
+}
